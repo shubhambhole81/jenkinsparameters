@@ -15,7 +15,7 @@ pipeline {
         stage('Stage_C') {
             steps {
                  script{
-                    modules.first = load ("")
+                    modules.buildstatus = load ("buildstatus.groovy")
                     echo 'Deploying'
                     bat "getjobstatus.py"
             }
