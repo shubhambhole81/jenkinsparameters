@@ -20,14 +20,15 @@ pipeline {
                 echo 'Deploying'
             }
         }
+    }
 
-        post {
-            always {
-                printFinishedStageDurations()
-            }
+    post {
+        always {
+            printFinishedStageDurations()
         }
     }
 }
+
 
 void printFinishedStageDurations() {
 
