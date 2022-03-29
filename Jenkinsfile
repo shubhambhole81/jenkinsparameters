@@ -1,3 +1,4 @@
+def modules = [:]
 pipeline {
     agent any
     stages {
@@ -13,8 +14,10 @@ pipeline {
         }   
         stage('Stage_C') {
             steps {
-                echo 'Deploying'
-                bat "getjobstatus.py"
+                 script{
+                    modules.first = load ("")
+                    echo 'Deploying'
+                    bat "getjobstatus.py"
             }
         }
     }
