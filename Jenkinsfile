@@ -16,6 +16,7 @@ pipeline {
             steps {
                  script{
                     modules.buildstatus = load ("buildstatus.groovy")
+                    module.buildstatus.printFinishedStageDurations()
                     echo 'Deploying'
                     bat "getjobstatus.py"
             }
