@@ -19,6 +19,7 @@ pipeline {
                     module.buildstatus.printFinishedStageDurations()
                     echo 'Deploying'
                     bat "getjobstatus.py"
+                }    
             }
         }
     }
