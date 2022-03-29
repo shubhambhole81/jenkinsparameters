@@ -1,3 +1,5 @@
+import jenkins.model.*
+jenkins = Jenkins.instanc
 def modules = [:]
 pipeline {
     agent any
