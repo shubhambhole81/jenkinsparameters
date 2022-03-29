@@ -1,7 +1,3 @@
-import io.jenkins.blueocean.rest.impl.pipeline.PipelineNodeGraphVisitor
-import io.jenkins.blueocean.rest.impl.pipeline.FlowNodeWrapper
-import org.jenkinsci.plugins.workflow.actions.TimingAction
-
 pipeline {
     agent any
     stages {
