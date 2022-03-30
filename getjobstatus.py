@@ -4,7 +4,6 @@
 #print("JOB-BUILD_URL: ",os.environ['BUILD_URL'])
 #print("JOB-BUILD_TAG: ",os.environ['BUILD_TAG'])
 import requests
-
 url = "https://http://localhost:8080/job/TestPipeline//lastBuild/wfapi/"
 response = requests.request("GET", url)
 data = response.json()
