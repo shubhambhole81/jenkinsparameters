@@ -14,7 +14,6 @@ pipeline {
         stage('Stage_C') {
             steps {
                 echo 'Deploying'
-                bat'getjobstatus.py'
             }
         }
     }
