@@ -1,3 +1,3 @@
 import time
 print("I am in Stage_C")
-sleep.time(10)
+time.sleep(10)
