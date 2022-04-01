@@ -5,5 +5,5 @@
 #print("JOB-BUILD_TAG: ",os.environ['BUILD_TAG'])
 import time
 print("Hello World....!")
-time.sleep(60)
+time.sleep(120)
 
