@@ -1,3 +1,3 @@
 import time
 print("Building stage_B")
-time.sleep(120)
+time.sleep(240)
