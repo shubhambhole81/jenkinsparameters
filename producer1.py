@@ -36,25 +36,8 @@ try:
         except Exception as e:
             print("NO Broker Available.......") 
             
-        
-    # consumer reading messaages at topic level.
-    consumer = KafkaConsumer(KAFKA_TOPIC,
-    bootstrap_servers=[KAFKA_URL],
-    group_id=None,
-    enable_auto_commit=True,
-    auto_commit_interval_ms=1000,
-    auto_offset_reset='earliest',
-    value_deserializer = lambda x : loads(x.decode('utf-8')))
-
-    for message in consumer:
-        print("\n\nMessage", message)
-        if message is not None:
-         print(message.offset, message.value)
-    
-
 except requests.exceptions.HTTPError: # handle exception for invalid url.
     print("Enter valid url..")
-
         
 
 
