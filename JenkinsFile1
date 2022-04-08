@@ -1,16 +1,14 @@
 pipeline {
-    agent any
-    stages {
-        stage('kafka') {
-            steps {
-                echo "sending Data"
-            }
+     agent any
+     stages {
+
+     stage ('Kafka')
+     {
+        steps {
+            build job: 'TestPipeline', parameters: [string(name:'Environment', value: "production")]
+            bat "production1.py"
         }
     }
-    post {
-        always {
-            bat "producer1.py"
-        }
-    }
+ }
 }
 
