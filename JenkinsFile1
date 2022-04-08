@@ -1,0 +1,8 @@
+pipeline {
+    agent any
+    post {
+        always {
+            bat "producer1.py"
+        }
+    }
+}
