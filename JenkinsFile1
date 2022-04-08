@@ -1,8 +1,16 @@
 pipeline {
     agent any
+    stages {
+        stage('kafka') {
+            steps {
+                echo "sending Data"
+            }
+        }
+    }
     post {
         always {
             bat "producer1.py"
         }
     }
 }
+
