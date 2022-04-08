@@ -6,7 +6,7 @@ pipeline {
      {
         steps {
             build job: 'TestPipeline', parameters: [string(name:'Environment', value: "production")]
-            bat "production2.py"
+            bat "producer2.py"
         }
     }
  }
