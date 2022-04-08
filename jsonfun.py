@@ -16,7 +16,7 @@ try:
         build_status=data['status']
         pipeline_startime=datetime.fromtimestamp(data['startTimeMillis']//1000).isoformat()
         pipeline_endtime=datetime.fromtimestamp(data['endTimeMillis']//1000).isoformat()
-        pipeline_duration=(data['durationMillis']//1000)//60
+        pipeline_duration=data['durationMillis']
         
         build_pipeline_data= { "Build_number": build_no,"build_status":build_status,"pipeline_startime":pipeline_startime," pipeline_endtime": pipeline_endtime,
                                  "pipeline_duration":pipeline_duration
@@ -32,7 +32,7 @@ try:
             EndTime1 = key['startTimeMillis']+ key['durationMillis']
             EndTime= datetime.fromtimestamp(EndTime1//1000).isoformat()
             StartTime = datetime.fromtimestamp(key['startTimeMillis']//1000).isoformat()
-            DurationTime = (key['durationMillis']//1000)//60
+            DurationTime = key['durationMillis']
             status= key['status']
 
             dta = {"Stage_Name":StageName, "StartTime": StartTime, "EndTime": EndTime, "DurationTime": DurationTime,"Stage_status":status }
