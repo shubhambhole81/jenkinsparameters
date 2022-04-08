@@ -17,10 +17,5 @@ pipeline {
                 bat 'sleep1.py'
             }
         }
-        stage('Stage_D') {
-            steps {
-                bat 'producer2.py'
-            }
-        }    
     }
 }
