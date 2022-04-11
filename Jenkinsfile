@@ -15,6 +15,7 @@ pipeline {
         stage('Stage_C') {
             steps {
                 bat 'sleep1.py'
+                bat "producer2.py"
             }
         }
     }
