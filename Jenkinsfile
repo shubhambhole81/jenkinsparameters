@@ -15,11 +15,6 @@ pipeline {
         stage('Stage_C') {
             steps {
                 bat 'sleep1.py'
-            }
-        }
-
-        stage ('Kafka'){
-            steps {
                 bat "producer2.py"
             }
         }
