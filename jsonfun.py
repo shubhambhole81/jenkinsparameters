@@ -33,7 +33,7 @@ try:
             EndTime1 = key['startTimeMillis']+ key['durationMillis']
             EndTime= datetime.fromtimestamp(EndTime1//1000).isoformat()
             StartTime = datetime.fromtimestamp(key['startTimeMillis']//1000).isoformat()
-            DurationTime = (key['durationMillis']//1000)//60
+            DurationTime = key['durationMillis']
             status= key['status']
 
             dta = {"Stage_Name":StageName, "StartTime": StartTime, "EndTime": EndTime, "DurationTime": DurationTime,"Stage_status":status }
