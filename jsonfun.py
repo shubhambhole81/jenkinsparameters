@@ -4,7 +4,7 @@ from requests.auth import HTTPBasicAuth
 import json
 
 try:
-    with open(r'artifact_jf.json','r') as f:
+    with open(r'jenkin.json','r') as f:
         filedata=json.load(f)
         for ele in filedata['data1']:
             status = requests.get(ele['url'], auth=HTTPBasicAuth(ele['username'],ele['pswd']))
