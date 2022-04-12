@@ -1,16 +1,13 @@
 {
     "data1":[
         {
-            "url": ",
-            "username":"",
-            "password": "",
+            "url": "http://localhost:8080/job/testpipline1/lastBuild/wfapi/",
+            "username":"dharmendra",
+            "password": "Kumar@123",
             
         },
         {
-            "path": "D:\\Test2\\TestFile2",
-            "file":5,
-            "subdir": "D:\\Test2",
-            "Zip_file_name": "D:\\Test2\\python1.zip"
+            "url": "http://localhost:8080/job/testpipline1/lastBuild/wfapi/"
         }
     ]
 }  
