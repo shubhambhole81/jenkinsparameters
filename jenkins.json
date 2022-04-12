@@ -3,7 +3,7 @@
         {
             "url": "http://localhost:8080/job/testpipline1/lastBuild/wfapi/",
             "username":"dharmendra",
-            "password": "Kumar@123",
+            "pswd": "Kumar@123",
             
         },
         {
