@@ -3,7 +3,7 @@ from datetime import datetime
 from requests.auth import HTTPBasicAuth
 
 try:
-    status = requests.get('http://localhost:8080/job/TestPipeline/lastBuild/wfapi/', auth=HTTPBasicAuth('dharmendra', 'Kumar@123'))
+    status = requests.get('http://localhost:8080/job/testpipline1/lastBuild/wfapi/', auth=HTTPBasicAuth('dharmendra', 'Kumar@123'))
     
     status.raise_for_status() #raise exception for error code. 
 
