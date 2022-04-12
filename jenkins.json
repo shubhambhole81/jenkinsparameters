@@ -2,14 +2,14 @@
     "data1":[
         {
             "url":"http://localhost:8080/job/testpipline1/lastBuild/wfapi/",
-            "username": "dharmendra",
-            "pswd": "Kumar@123"
+            "username": "admin",
+            "pswd": "pass123"
             
         },
         {
             "url":"http://localhost:8080/job/testpipeline2/lastBuild/wfapi/",
-            "username": "dharmendra",
-            "pswd": "Kumar@123"
+            "username": "admin",
+            "pswd": "pass123"
             
         }
     ]
